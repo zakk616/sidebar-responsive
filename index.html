@@ -87,7 +87,9 @@
         transition: all 0.3s ease;
       }
 
-      /*----------------page-wrapper----------------*/
+      #show-sidebar {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+      }
 
       .page-wrapper {
         height: 100vh;
@@ -543,13 +545,19 @@
       .chiller-theme .sidebar-footer > a:last-child {
         border-right: none;
       }
+
+      #show-sidebar i {
+        font-weight: bold;
+        flex-grow: 1;
+        color: lightgray;
+      }
     </style>
   </head>
 
   <body>
     <div class="page-wrapper chiller-theme">
       <a id="show-sidebar" class="btn btn-dark" href="#">
-        <i style="font-weight: bold; flex-grow: 1; color: #818896">History</i>
+        <i>History</i>
       </a>
       <nav id="sidebar" class="sidebar-wrapper">
         <div>
